@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mental Health Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>MindCare AI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/" class="active">Chat</a></li>
+                <li><a href="#" id="mood-tracker-link">Mood Tracker</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="chat-section">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2><i class="fas fa-comments"></i> Conversation</h2>
+                    <div class="emotion-indicator">
+                        <span id="current-emotion">Detecting emotion...</span>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>Hello! I'm your AI mental health companion. I'm here to listen, support, and help you navigate your feelings. How are you feeling today?</p>
+                            <span class="message-time"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <div class="input-wrapper">
+                        <input type="text" id="userInput" placeholder="Type your message here..." autocomplete="off">
+                        <button id="sendBtn" class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="info-card">
+                <h3><i class="fas fa-lightbulb"></i> Daily Suggestion</h3>
+                <p id="daily-suggestion">Loading suggestion...</p>
+            </div>
+
+            <div class="info-card">
+                <h3><i class="fas fa-heart"></i> Quick Tips</h3>
+                <ul class="tips-list">
+                    <li><i class="fas fa-check"></i> Take deep breaths when stressed</li>
+                    <li><i class="fas fa-check"></i> Stay hydrated throughout the day</li>
+                    <li><i class="fas fa-check"></i> Get 7-8 hours of sleep</li>
+                    <li><i class="fas fa-check"></i> Practice gratitude daily</li>
+                    <li><i class="fas fa-check"></i> Connect with loved ones</li>
+                </ul>
+            </div>
+
+            <div class="info-card emergency-card">
+                <h3><i class="fas fa-exclamation-triangle"></i> Need Immediate Help?</h3>
+                <p>If you're in crisis, please contact:</p>
+                <ul class="emergency-contacts">
+                    <li><strong>National Helpline:</strong> 988</li>
+                    <li><strong>Crisis Text Line:</strong> Text HOME to 741741</li>
+                    <li><strong>Emergency:</strong> 911</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mood Tracker Modal -->
+    <div id="moodModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-smile"></i> Track Your Mood</h2>
+            <div class="mood-selector">
+                <div class="mood-option" data-mood="joy">
+                    <i class="fas fa-laugh-beam"></i>
+                    <span>Happy</span>
+                </div>
+                <div class="mood-option" data-mood="neutral">
+                    <i class="fas fa-meh"></i>
+                    <span>Okay</span>
+                </div>
+                <div class="mood-option" data-mood="sadness">
+                    <i class="fas fa-sad-tear"></i>
+                    <span>Sad</span>
+                </div>
+                <div class="mood-option" data-mood="anger">
+                    <i class="fas fa-angry"></i>
+                    <span>Angry</span>
+                </div>
+                <div class="mood-option" data-mood="fear">
+                    <i class="fas fa-frown-open"></i>
+                    <span>Anxious</span>
+                </div>
+            </div>
+            <textarea id="moodNotes" placeholder="Any notes about your mood? (optional)"></textarea>
+            <button id="saveMoodBtn" class="primary-btn">Save Mood</button>
+            
+            <div class="mood-history">
+                <h3>Recent Mood History</h3>
+                <div id="moodHistoryContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

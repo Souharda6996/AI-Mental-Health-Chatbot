@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - MindCare AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>MindCare AI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Chat</a></li>
+                <li><a href="#">Mood Tracker</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/about" class="active">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        <div class="about-header">
+            <h1><i class="fas fa-heart"></i> About MindCare AI</h1>
+            <p class="tagline">Your compassionate AI companion for mental wellness</p>
+        </div>
+
+        <div class="about-content">
+            <section class="about-section">
+                <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+                <p>MindCare AI is dedicated to making mental health support accessible to everyone. We believe that everyone deserves a safe space to express their feelings and receive compassionate guidance. Our AI-powered chatbot combines advanced emotion detection with empathetic responses to provide 24/7 support.</p>
+            </section>
+
+            <section class="about-section">
+                <h2><i class="fas fa-cogs"></i> How It Works</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-brain"></i>
+                        <h3>Emotion Detection</h3>
+                        <p>Advanced NLP models analyze your messages to understand your emotional state in real-time.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-comments"></i>
+                        <h3>Sentiment Analysis</h3>
+                        <p>Our system evaluates the sentiment of your messages to provide contextually appropriate responses.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-smile"></i>
+                        <h3>Mood Tracking</h3>
+                        <p>Log and track your moods over time to identify patterns and triggers in your mental health journey.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Personalized Suggestions</h3>
+                        <p>Receive daily wellness tips and coping strategies tailored to your emotional state.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2><i class="fas fa-shield-alt"></i> Privacy & Security</h2>
+                <p>Your privacy is our top priority. All conversations are stored locally and securely. We do not share your data with third parties. However, this tool is for supportive purposes only and should not replace professional mental health care.</p>
+            </section>
+
+            <section class="about-section">
+                <h2><i class="fas fa-code"></i> Technology Stack</h2>
+                <ul class="tech-list">
+                    <li><i class="fab fa-python"></i> <strong>Backend:</strong> Python Flask</li>
+                    <li><i class="fas fa-robot"></i> <strong>AI Models:</strong> Hugging Face Transformers (DistilBERT)</li>
+                    <li><i class="fas fa-chart-line"></i> <strong>NLP:</strong> Emotion Detection & Sentiment Analysis</li>
+                    <li><i class="fab fa-html5"></i> <strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                </ul>
+            </section>
+
+            <section class="about-section">
+                <h2><i class="fas fa-exclamation-triangle"></i> Important Disclaimer</h2>
+                <p class="disclaimer-text">MindCare AI is designed to provide emotional support and information but is NOT a substitute for professional mental health treatment. If you are experiencing a mental health crisis, severe depression, suicidal thoughts, or any serious mental health condition, please contact a mental health professional or crisis helpline immediately.</p>
+            </section>
+
+            <section class="about-section">
+                <h2><i class="fas fa-envelope"></i> Contact & Feedback</h2>
+                <p>We're constantly working to improve MindCare AI. Your feedback helps us create a better experience for everyone. For questions, suggestions, or concerns, please reach out through our GitHub repository.</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

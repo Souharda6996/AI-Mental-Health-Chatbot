@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Resources - MindCare AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>MindCare AI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Chat</a></li>
+                <li><a href="#">Mood Tracker</a></li>
+                <li><a href="/resources" class="active">Resources</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="resources-container">
+        <h1><i class="fas fa-book-medical"></i> Mental Health Resources</h1>
+        
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3><i class="fas fa-phone-volume"></i> Crisis Helplines</h3>
+                <ul>
+                    <li><strong>988 Suicide & Crisis Lifeline:</strong> Call or text 988</li>
+                    <li><strong>Crisis Text Line:</strong> Text HOME to 741741</li>
+                    <li><strong>SAMHSA National Helpline:</strong> 1-800-662-4357</li>
+                    <li><strong>Veterans Crisis Line:</strong> 1-800-273-8255 (Press 1)</li>
+                </ul>
+            </div>
+
+            <div class="resource-card">
+                <h3><i class="fas fa-hospital"></i> Professional Help</h3>
+                <ul>
+                    <li><strong>Psychology Today:</strong> Find therapists near you</li>
+                    <li><strong>NAMI:</strong> National Alliance on Mental Illness</li>
+                    <li><strong>MentalHealth.gov:</strong> Government mental health resources</li>
+                    <li><strong>BetterHelp:</strong> Online therapy platform</li>
+                </ul>
+            </div>
+
+            <div class="resource-card">
+                <h3><i class="fas fa-users"></i> Support Groups</h3>
+                <ul>
+                    <li><strong>DBSA:</strong> Depression and Bipolar Support Alliance</li>
+                    <li><strong>Anxiety and Depression Association:</strong> Support resources</li>
+                    <li><strong>Alcoholics Anonymous:</strong> AA meetings</li>
+                    <li><strong>SMART Recovery:</strong> Science-based addiction support</li>
+                </ul>
+            </div>
+
+            <div class="resource-card">
+                <h3><i class="fas fa-mobile-alt"></i> Mental Health Apps</h3>
+                <ul>
+                    <li><strong>Headspace:</strong> Meditation and mindfulness</li>
+                    <li><strong>Calm:</strong> Sleep and relaxation</li>
+                    <li><strong>Moodpath:</strong> Depression screening</li>
+                    <li><strong>Sanvello:</strong> Stress and anxiety management</li>
+                </ul>
+            </div>
+
+            <div class="resource-card">
+                <h3><i class="fas fa-graduation-cap"></i> Educational Resources</h3>
+                <ul>
+                    <li><strong>NIMH:</strong> National Institute of Mental Health</li>
+                    <li><strong>Mental Health America:</strong> Education and screening</li>
+                    <li><strong>Active Minds:</strong> Mental health awareness</li>
+                    <li><strong>The Trevor Project:</strong> LGBTQ+ youth support</li>
+                </ul>
+            </div>
+
+            <div class="resource-card">
+                <h3><i class="fas fa-heartbeat"></i> Self-Care Techniques</h3>
+                <ul>
+                    <li><strong>Mindfulness Meditation:</strong> Daily practice</li>
+                    <li><strong>Exercise:</strong> 30 minutes daily</li>
+                    <li><strong>Sleep Hygiene:</strong> 7-8 hours nightly</li>
+                    <li><strong>Journaling:</strong> Express your thoughts</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <p><i class="fas fa-info-circle"></i> <strong>Disclaimer:</strong> This AI chatbot is designed to provide support and information but is not a substitute for professional mental health care. If you're experiencing a mental health crisis, please contact a crisis helpline or seek immediate professional help.</p>
+        </div>
+    </div>
+</body>
+</html>
